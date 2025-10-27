@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor at Your Fingertip - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Tutor at Your Fingertip</h1>
+            <p>Your journey to academic excellence starts here. We provide personalized online tutoring for students in Saudi Arabia, Qatar, and the UAE.</p>
+            <a href="pages/free-trial.html" class="cta-button">Book a Free Trial</a>
+        </section>
+
+        <section class="subjects">
+            <h2>Subjects We Teach</h2>
+            <ul>
+                <li>Maths</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+            </ul>
+        </section>
+
+        <section class="boards">
+            <h2>Boards We Teach</h2>
+            <ul>
+                <li>GCSE</li>
+                <li>GCE</li>
+                <li>IB</li>
+                <li>High School</li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
