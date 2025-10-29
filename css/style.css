@@ -1,10 +1,12 @@
 /* General Body Styles */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #E5E9C5;
-    color: #333;
+    background-color: #F8F9FA; /* Lighter, cleaner background */
+    color: #212529; /* Darker text for better contrast */
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased; /* Smoother fonts */
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Header and Navigation Styles */
@@ -12,6 +14,10 @@ header {
     background-color: #016B61;
     padding: 1rem 0;
     color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -50,15 +56,23 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #70B2B2;
 }
 
 /* Main Content Styles */
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 40px auto; /* Increased top/bottom margin */
+    padding: 40px; /* Increased padding */
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px; /* Softer radius */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* More pronounced shadow */
 }
 
 /* Hero Section */
@@ -67,23 +81,25 @@ main {
     padding: 50px 20px;
     background-color: #70B2B2;
     color: white;
-    border-radius: 8px;
+    border-radius: 12px; /* Match main content radius */
 }
 
 .hero-image {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px; /* Match main content radius */
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger font size */
+    font-weight: 700; /* Bolder */
+    letter-spacing: -1px; /* Tighter letter spacing */
 }
 
 .mission-statement {
-    font-size: 1.2rem;
+    font-size: 1.25rem; /* Slightly larger */
     margin: 20px auto;
     max-width: 800px;
     line-height: 1.8;
@@ -93,27 +109,42 @@ main {
     display: inline-block;
     background-color: #016B61;
     color: white;
-    padding: 12px 25px;
+    padding: 15px 30px; /* Larger padding for a bigger button */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Softer radius */
     font-size: 1.1rem;
+    font-weight: 600; /* Bolder text */
     margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #015850; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
 /* Sections */
 .subjects, .boards, .about-us, .free-trial, .contact-us {
-    padding: 40px 0;
+    padding: 60px 0; /* Increased vertical padding */
 }
 
 h1, h2 {
     color: #016B61;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    border-bottom: 3px solid #70B2B2; /* Accent border */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .page-image {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px; /* Match main content radius */
     margin-bottom: 20px;
 }
 
@@ -129,17 +160,25 @@ label {
 }
 
 input, select, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px; /* Softer radius */
     font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #70B2B2;
+    box-shadow: 0 0 0 3px rgba(112, 178, 178, 0.25); /* Focus indicator */
 }
 
 /* Footer Styles */
 footer {
     background-color: #016B61;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0; /* Increased padding */
+    margin-top: 40px;
 }
 
 .footer-content {
@@ -157,4 +196,9 @@ footer {
     color: white;
     text-decoration: none;
     margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #9ECFD4; /* Lighter color on hover */
 }
