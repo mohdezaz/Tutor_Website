@@ -124,8 +124,38 @@ main {
 }
 
 /* Sections */
-.subjects, .boards, .about-us, .free-trial, .contact-us {
+.subjects, .boards, .about-us, .free-trial, .contact-us, .we-provide {
     padding: 60px 0; /* Increased vertical padding */
+}
+
+/* "We Provide" Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #e5e9c5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+    color: #016B61;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 h1, h2 {
