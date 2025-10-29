@@ -1,12 +1,16 @@
-import os
+
 from playwright.sync_api import sync_playwright
+import os
 
 def run():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        page.goto('file://' + os.path.abspath('index.html'))
-        page.screenshot(path='jules-scratch/verification/homepage-we-provide.png')
+        # Get the absolute path to the HTML file
+        file_path = os.path.abspath('index.html')
+        page.goto(f'file://{file_path}')
+        page.screenshot(path='jules-scratch/verification/homepage-testimonials.png', full_page=True)
         browser.close()
 
-run()
+if __name__ == "__main__":
+    run()
