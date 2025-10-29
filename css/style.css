@@ -232,3 +232,46 @@ footer {
 .footer-content a:hover {
     color: #9ECFD4; /* Lighter color on hover */
 }
+
+/* "Our Philosophy" Section */
+.philosophy {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.philosophy-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.philosophy-content h2 {
+    font-size: 2.25rem;
+    color: #016B61;
+    margin-bottom: 20px;
+}
+
+.philosophy-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.philosophy-content p:first-of-type {
+    font-style: italic;
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.philosophy-image {
+    flex: 1;
+}
+
+.philosophy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
