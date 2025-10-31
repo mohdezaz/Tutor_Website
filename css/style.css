@@ -77,31 +77,41 @@ main {
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #70B2B2;
-    color: white;
-    border-radius: 12px; /* Match main content radius */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 20px;
+    background-color: #E5E9C5;
+    color: #016B61;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
 }
 
 .hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-image img {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px; /* Match main content radius */
-    margin-bottom: 20px;
+    border-radius: 12px;
 }
 
 .hero h1 {
-    font-size: 3rem; /* Larger font size */
-    font-weight: 700; /* Bolder */
-    letter-spacing: -1px; /* Tighter letter spacing */
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: #016B61;
 }
 
 .mission-statement {
-    font-size: 1.25rem; /* Slightly larger */
-    margin: 20px auto;
-    max-width: 800px;
+    font-size: 1.25rem;
+    margin: 20px 0;
     line-height: 1.8;
 }
 
