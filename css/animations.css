@@ -17,6 +17,29 @@ main section {
     animation: fadeIn 0.8s ease-in-out forwards;
 }
 
+.hero-content h1, .hero-content p, .cta-button {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.hero-image {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Add a subtle hover effect to links */
 a {
     transition: color 0.3s ease;
