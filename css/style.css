@@ -195,6 +195,15 @@ main {
     line-height: 1.6;
 }
 
+.tutor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #70B2B2;
+}
+
 /* "We Provide" Section */
 .features {
     display: flex;
