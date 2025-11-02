@@ -138,8 +138,8 @@ main {
     padding: 60px 0; /* Increased vertical padding */
 }
 
-/* Subject and Board Cards */
-.subject-cards, .board-cards {
+/* Subject, Board, and Tutor Cards */
+.subject-cards, .board-cards, .tutor-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
