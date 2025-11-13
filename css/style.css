@@ -201,13 +201,10 @@ main {
     line-height: 1.6;
 }
 
-.tutor-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+.tutor-cards .card i {
+    font-size: 4rem;
     margin-bottom: 20px;
-    border: 5px solid #70B2B2;
+    color: #016B61;
 }
 
 /* "We Provide" Section */
