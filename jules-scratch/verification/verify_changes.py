@@ -3,7 +3,7 @@ from playwright.sync_api import sync_playwright
 def run(playwright):
     browser = playwright.chromium.launch()
     page = browser.new_page()
-    page.goto("file:///app/index.html")
+    page.goto("file:///app/pages/about.html")
     page.screenshot(path="/app/jules-scratch/verification/verification.png")
     browser.close()
 

@@ -231,7 +231,7 @@ main {
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-.feature h3 {
+.feature h3, .feature h4 {
     color: #016B61;
     font-size: 1.5rem;
     margin-bottom: 15px;
