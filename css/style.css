@@ -237,6 +237,34 @@ main {
     margin-bottom: 15px;
 }
 
+/* "How it Works" Section */
+.how-it-works {
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.step {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    border: 1px solid #e5e9c5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.step h3 {
+    color: #016B61;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
 h1, h2 {
     color: #016B61;
     letter-spacing: -0.5px;
