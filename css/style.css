@@ -340,6 +340,15 @@ footer {
     color: #9ECFD4; /* Lighter color on hover */
 }
 
+.popular-subjects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-subjects ul li {
+    margin-bottom: 10px;
+}
+
 /* "Our Philosophy" Section */
 .philosophy {
     display: flex;
