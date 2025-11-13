@@ -195,6 +195,12 @@ main {
     color: #016B61;
 }
 
+.why-tyf .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 .card p {
     font-size: 1rem;
     font-weight: 400;
@@ -435,6 +441,18 @@ footer {
 /* FAQ Section */
 .faq {
     padding: 60px 0;
+}
+
+.why-tyf .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .why-tyf .features {
+        grid-template-columns: 1fr;
+    }
 }
 
 .faq-item {
